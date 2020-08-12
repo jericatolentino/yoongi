@@ -1,0 +1,15 @@
+service: SlsFunctions
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+
+functions:
+  csrf_function:
+    handler: dist/handler.hello
+    events:
+      - http:
+          path: path_csrf
+          method: get
+

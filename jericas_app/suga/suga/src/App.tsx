@@ -1,14 +1,17 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navigation from './Containers/Navigation';
+
 import './App.css';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App App-Center">
+        <Navigation/>
         <p>
-          Hi
+          Hi Main content
         </p>
-      </header>
     </div>
   );
 }
