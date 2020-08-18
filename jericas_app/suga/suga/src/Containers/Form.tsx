@@ -1,13 +1,35 @@
 import React from 'react';
 import { Form as FB, Button } from 'react-bootstrap';
+import { sendLambda } from './SendToHandler';
 
 import './Form.css';
 
 class Form extends React.Component {
+
+    constructor(props: any){
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    async handleClick(e: any) {
+        e.preventDefault();
+        const data = e.target;
+        const result = {
+            buyerCardNo: data.buyerCardNo.value,
+            buyerEDMonth: data.buyerED[0].value,
+            buyerEDYear: data.buyerED[1].value,
+            buyerName: data.buyerName.value,
+            buyerSecCode: data.buyerSecCode.value
+        }
+        console.log(JSON.stringify(result,null,2));
+;       return sendLambda(result);
+    }
+ 
+
     render() {
         return <div className="Form-Container" >
             <div className="Form-InnerContainer" >
-                <FB>
+                <FB onSubmit={this.handleClick}>
                     <FB.Group controlId="buyerCardNo">
                         <FB.Label>Card Number</FB.Label>
                         <FB.Control type="text" placeholder="Enter card number" />

@@ -7,9 +7,10 @@ provider:
 
 functions:
   csrf_function:
-    handler: dist/handler.hello
+    handler: dist/handler.myHandler
     events:
       - http:
           path: path_csrf
-          method: get
+          method: post
+          cors: true
 

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonJS",
+    "module": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -16,7 +16,9 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "outDir": "src/dist",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
     "src"
