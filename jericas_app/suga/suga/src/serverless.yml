@@ -1,4 +1,4 @@
-service: SlsFunctions
+service: yoongi
 
 provider:
   name: aws

@@ -14,8 +14,8 @@ class Navigation extends React.Component {
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
-                />{'testing'}
-                Navigation bar
+                />{''}
+                Payment transaction
                 </Navbar.Brand>
             </Navbar>
         </div>;
