@@ -1,0 +1,25 @@
+.Form-Container {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+}
+
+.Form-InnerContainer {
+    text-align: left;
+}
+
+.Form-ED {
+    width: 20%;
+    display: inline;
+}
+
+.Form-Date {
+    font-size: 0.8em;
+    padding-right: 6%;
+}

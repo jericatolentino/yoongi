@@ -6,11 +6,8 @@ export const hello = async (event: any, _context: any) => {
       'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify({
-      message: 'Function from handler  hellooooooooo',
+      message: 'Function from yoongles handler',
       input: event,
     }, null, 2),
   };
 }
-
-//exports.handler = async function hello(event: any, _context: any) {
-//exports.handler = hello;
