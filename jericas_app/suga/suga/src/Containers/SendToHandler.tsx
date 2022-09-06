@@ -8,8 +8,8 @@ interface paramsType {
 
 AWS.config.update(
     {
-        accessKeyId: 'AKIAWP6MJMQMOG6XV4VP', 
-        secretAccessKey: '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',
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID, 
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
         region: 'us-east-1'
     }
 );
